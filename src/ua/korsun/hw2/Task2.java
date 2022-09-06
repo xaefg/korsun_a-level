@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class homework2Task2TriangleArea {
+public class Task2 {
     public static void main(String[] args){
         System.out.println("The triangle area is " + trSqr());
     }

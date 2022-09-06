@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class homework2Task3OddEven {
+public class Task3 {
     public static void main(String[] args){
         System.out.println("Enter number");
         Scanner sc = new Scanner(System.in);
