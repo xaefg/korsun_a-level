@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class homework2Task3OddEven {
-    public static void main(String args[]){
+    public static void main(String[] args){
         System.out.println("Enter number");
         Scanner sc = new Scanner(System.in);
         double x = sc.nextDouble();

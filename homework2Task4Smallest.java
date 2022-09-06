@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class homework2Task4Smallest {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println("Enter numbers");
         Scanner sc = new Scanner(System.in);
         int num1 = sc.nextInt();
