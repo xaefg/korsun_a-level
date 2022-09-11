@@ -5,17 +5,20 @@ public class Task2 {
         System.out.println("Enter string");
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-        System.out.println("Your string is "+ checker(str));
+        String str1 = blankClearer(str);
+        System.out.println("Your string is "+ checker(str1));
     }
 
-    public static String reverser(String str){
+    public static String blankClearer(String str){
         str = str.replaceAll(" ", "");
-        StringBuilder sb = new StringBuilder();
-        sb.append(str);
-        sb.reverse();
-        return new String(sb);
+        return str;
     }
-    public static String checker(String str){
-        return str.replaceAll(" ", "").equals(reverser(str)) ? "palindrome" : "not palindrome";
+    public static String checker(String str1){
+        StringBuilder sb = new StringBuilder();
+        sb.append(str1);
+        sb.reverse();
+        String str2 = new String(sb);
+        return str2.equals(str1) ? "palindrome" : "not palindrome";
     }
 }
+
