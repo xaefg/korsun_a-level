@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class task4 {
     public static void main(String[] args) {
-        int[] myArray = new int[20];
+        int[] myArray = new int[2000];
         int[] myArray1 = filler(myArray);
         System.out.println(Arrays.toString(replacer(myArray1)));
     }
@@ -17,7 +17,7 @@ public class task4 {
     }
 
     public static int[] replacer(int[] myArray1) {
-        for (int i = 0; i < myArray1.length ; i++) {
+        for (int i : myArray1) {
             if(myArray1[i]%2 == 0){
                 myArray1[i]=0;
             }
