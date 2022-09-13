@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task2 {
+public class task2Hw2 {
     public static void main(String[] args){
         System.out.println("The triangle area is " + trSqr());
     }
@@ -27,7 +27,6 @@ public class Task2 {
         int cY = 7;*/
 
 
-        double area = Math.abs((aX * (bY - cY) + bX * (cY- aY) + cX * (aY - bY))/2);
-        return area;
+        return Math.abs((aX * (bY - cY) + bX * (cY- aY) + cX * (aY - bY))/2);
     }
 }

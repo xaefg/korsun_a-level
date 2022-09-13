@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class task4 {
+public class task4Hw4 {
     public static void main(String[] args) {
         int[] myArray = new int[2000];
         int[] myArray1 = filler(myArray);

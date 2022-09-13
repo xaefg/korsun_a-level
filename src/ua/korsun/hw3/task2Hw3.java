@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Task2 {
+public class task2Hw3 {
     public static void main(String []args){
         System.out.println("Enter string");
         Scanner sc = new Scanner(System.in);
