@@ -17,7 +17,7 @@ public class task4 {
     }
 
     public static int[] replacer(int[] myArray1) {
-        for (int i : myArray1) {
+        for (int i = 0; i < myArray1.length; i++) {
             if(myArray1[i]%2 == 0){
                 myArray1[i]=0;
             }
