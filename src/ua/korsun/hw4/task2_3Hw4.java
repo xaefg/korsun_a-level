@@ -20,7 +20,7 @@ public class task2_3Hw4 {
         int simpleSum = 0;
         int complexSum = 0;
         for(int e : myArray){
-            if (e % 2 == 0) {
+            if (e % 2 == 0 || e%Math.sqrt(e) == 0) {
                 simpleSum++;
             } else {
                 complexSum++;

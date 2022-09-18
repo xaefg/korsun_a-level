@@ -5,7 +5,8 @@ public class task4Hw4 {
     public static void main(String[] args) {
         int[] myArray = new int[2000];
         int[] myArray1 = filler(myArray);
-        System.out.println(Arrays.toString(replacer(myArray1)));
+        int[] myArray2 = replacer(myArray1);
+        System.out.println(Arrays.toString(replacer(myArray2)));
     }
 
     public static int[] filler(int[] myArray) {
