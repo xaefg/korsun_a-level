@@ -1,25 +1,37 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
         System.out.println("Enter matrix parameters");
-        int[][] matrix = new int[input.nextInt()][input.nextInt()];
-        System.out.println(Arrays.deepToString(filler(matrix)));
+        Scanner input = new Scanner(System.in);
+        int size = input.nextInt();
+        int[][] matrix = new int[size][size];
+        print(filler(matrix));
     }
     public static int[][] filler(int[][] arr){
         int content = 0;
-        for (int col = 0; col<arr.length; col++){
-            for (int row = 0; row < arr[col].length; row++) {
+        for (int row = 0; row<arr.length; row++){
+            for (int col = 0; col < arr[row].length; col++) {
                 content++;
-                if(col % 2==0){
-                    arr[col][row] = content;
+                if(row % 2==0){
+                    arr[row][col] = content;
                 }else {
-                    arr[col][row] = (-content);
+                    arr[row][col] = (-content);
                 }
             }
         }
         return arr;
+    }
+    public static void print(int[][]arr){
+        for (int[] j: arr){
+            for(int i : j){
+                if(i>0){
+                    System.out.print(i + "  ");
+                }else {
+                    System.out.print(i + " ");
+                }
+            }
+            System.out.println();
+        }
     }
 }
