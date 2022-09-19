@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Task4Hw5 {
+public class Task4 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
         System.out.println("Current array "+ Arrays.toString(arr));

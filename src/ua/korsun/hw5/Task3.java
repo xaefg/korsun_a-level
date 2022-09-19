@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Task3Hw5 {
+public class Task3 {
     public static void main(String[] args) {
         System.out.println("Enter matrix size");
         Scanner sc = new Scanner(System.in);
