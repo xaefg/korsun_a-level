@@ -1,7 +1,6 @@
-
 import java.util.Arrays;
 
-public class Task2Practice5 {
+public class Practice2 {
     public static void main(String[] args) {
         int[] studHeight = {160, 150, 148, -160, -170, 160, 150, 148, -160, -170, 160, 150, 148, -160, -170};
         System.out.println(Arrays.toString(studHeight));
@@ -24,7 +23,7 @@ public class Task2Practice5 {
         return arr1;
     }
     public static int[] result(int[] arr){
-    int[] arr1 = new int[2];
+        int[] arr1 = new int[2];
         arr1[0] = Math.abs(arr[0]/arr[1]);
         arr1[1] = arr[2]/arr[3];
         return arr1;
