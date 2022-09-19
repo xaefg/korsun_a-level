@@ -2,22 +2,21 @@ import java.util.Arrays;
 import java.util.Random;
 
 
-public class task1Hw4 {
+public class Task1 {
     public static void main(String[] args) {
         int[] myArray = new int[400];
-        int[] myArray1 = filler(myArray);
-        System.out.println(Arrays.toString(filler(myArray)));
-        System.out.println(arithmeticMean(myArray1));
-        System.out.println(geometicMean(myArray1));
+        filler(myArray);
+        System.out.println(Arrays.toString(myArray));
+        System.out.println(arithmeticMean(myArray));
+        System.out.println(geometricMean(myArray));
 
     }
 
-    public static int[] filler(int[] myArray) {
+    public static void filler(int[] myArray) {
         Random random = new Random();
         for (int i = 0; i < myArray.length; i++) {
             myArray[i] = random.nextInt(1, 10);
         }
-        return myArray;
     }
 
     public static double arithmeticMean(int[] myArray) {
@@ -29,7 +28,7 @@ public class task1Hw4 {
         return sum / b;
     }
 
-    public static double geometicMean(int[] myArray) {
+    public static double geometricMean(int[] myArray) {
         int sum = 1;
         for (double j : myArray) {
             sum *= j;
