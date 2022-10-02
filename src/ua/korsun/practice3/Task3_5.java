@@ -1,6 +1,8 @@
+package practice3;
+
 import java.util.Scanner;
 
-public class task_3_5Practice3 {
+public class Task3_5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number");

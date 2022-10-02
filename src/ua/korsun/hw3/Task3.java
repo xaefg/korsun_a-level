@@ -1,6 +1,8 @@
+package hw3;
+
 import java.util.Scanner;
 
-public class task3Hw3 {
+public class Task3 {
     public static void main(String[] args){
         System.out.println("Enter sentence");
         Scanner sc = new Scanner(System.in);

@@ -1,3 +1,5 @@
+package hw6;
+
 public class Task1 {
     static class Phone {
         private int number;
