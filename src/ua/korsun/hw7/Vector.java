@@ -31,7 +31,7 @@ public class Vector {
     }
 
     public double getCos(Vector vector){
-        return (getScalar(vector)/ getLength()*vector.getLength());
+        return (getScalar(vector)/ (getLength()*vector.getLength()));
     }
     public static void print(Vector vector){
         System.out.println(vector.x +" "+ vector.y +" "+ vector.z);
