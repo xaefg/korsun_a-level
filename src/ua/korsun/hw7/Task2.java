@@ -1,5 +1,5 @@
 package hw7;
-import java.util.Random;
+
 
 public class Task2 {
     public static void main(String[] args) {
@@ -13,14 +13,7 @@ public class Task2 {
         System.out.println(vector1.getLength());
         System.out.println(vector.getScalar(vector1));
         System.out.println(vector1.getScalar(vector));
-        Vector.printVectorArr(generator(4));
+        Vector.printVectorArr(Vector.generator(4));
     }
-    public static Vector[] generator(int n){
-        Vector[] vectorArr = new Vector[n];
-        Random random = new Random();
-        for (int i = 0; i<vectorArr.length; i++){
-            vectorArr[i] = new Vector(random.nextDouble(),random.nextDouble(),random.nextDouble());
-        }
-        return vectorArr;
-    }
+
 }

@@ -1,4 +1,7 @@
 package hw7;
+
+import java.util.Random;
+
 public class Vector {
     private final double x;
     private final double y;
@@ -40,5 +43,13 @@ public class Vector {
         for(Vector j : arr){
             print(j);
         }
+    }
+    public static Vector[] generator(int n){
+        Vector[] vectorArr = new Vector[n];
+        Random random = new Random();
+        for (int i = 0; i<vectorArr.length; i++){
+            vectorArr[i] = new Vector(random.nextDouble(),random.nextDouble(),random.nextDouble());
+        }
+        return vectorArr;
     }
 }
