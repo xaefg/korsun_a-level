@@ -12,7 +12,7 @@ public class Task2Test {
         int[][] array1 = new int[8][8];
         int[][] array2 = new int[][]{{10, 9, 8}, {8, 6, 5}, {4, 3, 2}};
         Assertions.assertFalse(Task2.checker(array));
-        Assertions.assertFalse(Task2.checker(array1));
-        Assertions.assertFalse(Task2.checker(array2));
+        Assertions.assertTrue(Task2.checker(array1));
+        Assertions.assertTrue(Task2.checker(array2));
     }
 }
