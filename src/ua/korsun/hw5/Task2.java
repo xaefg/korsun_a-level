@@ -16,9 +16,9 @@ public class Task2 {
     public static boolean checker(int[][] arr) {
         for (int j = 1; j < arr.length; j++) {
             for (int i = 1; i < arr[j].length; i++) {
-                if (arr[j][i] >= arr[j-1][i - 1]) {
+                if (arr[j][i] > arr[j-1][i - 1]) {
                     return false;
-                } else if (arr[j][0] >= arr[j - 1][arr[j-1].length - 1]) {
+                } else if (arr[j][0] > arr[j - 1][arr[j-1].length - 1]) {
                     return false;
                 }
             }
