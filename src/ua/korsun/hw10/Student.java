@@ -10,8 +10,8 @@ public class Student {
         this.averageMark = averageMark;
     }
 
-    public String getScholarship() {
-        return averageMark == 5 ? "100 uah" : "80 uah";
+    public int getScholarship() {
+        return averageMark == 5 ? 100 : 80;
     }
 }
 
