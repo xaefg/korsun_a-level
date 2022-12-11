@@ -5,6 +5,9 @@ public class Aspirant extends Student{
     public Aspirant(double averageMark) {
         super(averageMark);
     }
+    public Aspirant(String firstName, String lastName, String group) {
+        super(firstName, lastName, group);
+    }
 
     @Override
     public int getScholarship() {
