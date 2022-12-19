@@ -10,8 +10,9 @@ public class Truck extends Car {
     @Override
     public void move() {
         super.move();
-        fuelConsumption+=cargo;
-
+        if(cargo!=0) {
+            fuelConsumption *= 2;
+        }
     }
 
     public void loadCargo(double t) {
